@@ -7,7 +7,29 @@ responses:
     no_device_class: "{{ area }} neturi {{ device_class }}"
     no_entity: "Nėra įrenginio ar daikto pavadinimu {{ entity }}"
     handle_error: "Atsirado nenumatyta klaida bandant įvykdyti užklausą"
-lists: {}
+lists:
+  color:
+    values:
+      - in: "balta"
+        out: "white"
+      - in: "juoda"
+        out: "black"
+      - in: "raudona"
+        out: "red"
+      - in: "oranžinė"
+        out: "orange"
+      - in: "geltona"
+        out: "yellow"
+      - in: "žalia"
+        out: "green"
+      - in: "mėlyna"
+        out: "blue"
+      - in: "purpurinė"
+        out: "purple"
+      - in: "ruda"
+        out: "brown"
+	  - in: "rožinė"
+	    out: "pink"
 expansion_rules:
   name: "{name}"
   area: "{area}"
